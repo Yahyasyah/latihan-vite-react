@@ -1,28 +1,9 @@
-import { useState } from "react";
-import Home from "./home/Home.jsx";
-import Login from "./login/Login.jsx";
-import List from "./list/List.jsx";
-import Single from "./single/Single.jsx";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./new.scss"
 
-function New() {
+const New = () => {
   return (
-    <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/">
-            <Route index element={<Home />}></Route>
-            <Route path="login" element={<Login />}></Route>
-            <Route path="users">
-              <Route index element={<List />}></Route>
-              <Route path=":userId" element={<Single />}></Route>
-              <Route path="new" element={<New />}></Route>
-            </Route>
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </>
-  );
+    <div>New</div>
+  )
 }
 
 export default New;
