@@ -39,7 +39,7 @@ const Widget = ({ type }) => {
         title: "ORDERS",
         isMoney: false,
         link: "View all orders",
-        query:"users",
+        query:"products",
         icon: (
           <ShoppingCartOutlinedIcon
             className="icon"
